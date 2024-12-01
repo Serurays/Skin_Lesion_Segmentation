@@ -3,12 +3,7 @@ import numpy as np
 import os
 import matplotlib.pyplot as plt
 import tensorflow as tf
-import pandas as pd
 from PIL import Image
-from multiprocessing import Pool
-from tqdm import tqdm
-import cv2
-import warnings
 
 def load_data(image_dir, mask_dir, image_size=(128, 128)):
     image_files = sorted(os.listdir(image_dir))
